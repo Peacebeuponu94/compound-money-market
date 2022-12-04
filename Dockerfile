@@ -1,4 +1,4 @@
-FROM mhart/alpine-node:10.4.1
+FROM mhart/alpine-node:10.4.1@sha256:d81ab942799faf39807c7ad45023503dadc4ba069320848879ad3d70e6beef30
 
 RUN apk update && apk add --no-cache --virtual build-dependencies git python g++ make
 RUN yarn global add truffle@4.1.11
